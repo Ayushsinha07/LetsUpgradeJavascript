@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-3</title>
+</head>
+<script>
+    function fn1()
+    {
+        var txt=" ";
+        var details={
+            name:" ",
+            age:parseInt(" "),
+            country:" ",
+            hobbies:[""]
+
+        };
+        var x;
+        details.name=document.getElementById("one").value;
+        parseInt(details.age=document.getElementById("two").value);
+        details.country=document.getElementById("three").value;
+        details.hobbies=document.getElementById("four").value;
+        for(x in details)
+        {
+            txt +=details[x] + " ";
+        }
+        console.log(txt);
+        for(x in details)
+        {
+            if((details[x].age)<30)
+            console.log(details[x].age);
+            
+            if(details[x].country=="India" || details.country=="india")
+            console.log(details[x].country);
+            
+        }
+       
+        //for
+        //document.write(details.name);
+        //document.write(details.age);
+        //document.write(details.country);
+        //document.write(details.hobbies);
+        //var a=Object.values(details);
+        //document.write(a)
+        
+        
+        //details.age=b.value;
+        //details.country=c.value;
+        //details.hobbies=d.value;
+    }
+</script>
+<body>
+    <h2><pre>
+        Question 3
+            Create an array of objects with objects having the following properties
+                A. {name (string), age (number), country (string), hobbies array (string [ ] ) }
+                B. Write a function to display all the objects on the console
+    </pre></h2>
+    <h2><pre>
+        Question 4
+            Following the 3rd question
+                A. Write a function to display all the objects having age less than 30
+                B. Write a function to display all the objects having country India
+    </pre></h2>
+    <form>
+        <input type="text" placeholder="Enter your name" id="one">
+        <br>
+        <input type="number" placeholder="Enter your age" id="two">
+        <br>
+        <input type="text" placeholder="Enter your country" id="three">
+        <br>
+        <input type="text" placeholder="Enter your hobbies" id="four">
+        <br>
+        <button type="button" onclick="fn1()">Click</button>
+         &nbsp;&nbsp;&nbsp;&nbsp; <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

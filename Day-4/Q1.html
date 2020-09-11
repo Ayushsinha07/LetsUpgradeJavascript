@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+</head>
+<script>
+function fn2()
+{
+    document.getElementById("fire").src="2.jpg";
+    document.getElementById("hello").innerHTML="<h3>Image-2</h3>";
+}
+function fn1()
+{
+    document.getElementById("fire").src="1.jpg";
+    document.getElementById("hello").innerHTML="<h3>Image-1</h3>";
+}
+function fn3()
+{
+    document.getElementById("fire").src="3.jpg";
+    document.getElementById("hello").innerHTML="<h3>Image-3</h3>";
+}
+</script>
+<body>
+    <h2><pre>Question 1
+        Create a webpage containing an image and three buttons
+        A. On click of the second button a change the existing image to a new image
+        B. On click of the third button change it once again
+        C. On click of first, the first image should come back</pre></h1>
+        <h3 id="hello">Image-1</h3>
+        <img src="1.jpg" height="30%" width="30%" id="fire">
+        <br><br>
+        <button type="button" onclick="fn1()">Button-1</button>
+        <br><br>
+        <button type="button" onclick="fn2()">Button-2</button>
+        <br><br>
+        <button type="button" onclick="fn3()">Button-3</button>
+</body>
+</html>
